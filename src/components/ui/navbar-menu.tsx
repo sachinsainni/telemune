@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import logo from '@/images/logoname.webp'
+import { usePathname } from "next/navigation";
 
 const transition = {
   type: "spring",
@@ -27,12 +28,13 @@ export const MenuItem = ({
   children?: React.ReactNode;
   link?: string;
 }) => {
+  const pathname = usePathname()
   return (
     <div onMouseEnter={() => setActive(item)} className="relative ">
       <Link href={link || ''}>
         <motion.p
           transition={{ duration: 0.3 }}
-          className="cursor-pointer text-black hover:text-orange-600 hover:dark:text-orange-600 dark:text-white"
+          className={`cursor-pointer text-black hover:text-orange-600 hover:dark:text-orange-600  ${pathname === link ? 'text-orange-600 dark:text-orange-600' : 'dark:text-white  text-white'}`}
         >
           {item}
         </motion.p>
@@ -72,6 +74,8 @@ export const Menu = ({
   setActive: (item: string | null) => void;
   children: React.ReactNode;
 }) => {
+  const pathname = usePathname()
+
   return (
     <div className="flex justify-between bg-gradient-to-t from-slate-950 to-black ">
       <motion.div
@@ -80,7 +84,7 @@ export const Menu = ({
         transition={{ delay: 1.2 }}
         className="my-auto ml-4"
       >
-        <Link href='/' >
+        <Link href='/' className={`link ${pathname === '/' ? 'active' : ''}`} >
           <Image
             alt="logo"
             src={logo}
@@ -97,7 +101,7 @@ export const Menu = ({
         animate="visible"
         transition={{ delay: 1 }}
         onMouseLeave={() => setActive(null)} // resets the state
-        className="relative shadow-input flex justify-center space-x-8 px-6 py-4 "
+        className={`relative shadow-input flex justify-center space-x-8 px-6 py-4`}
       >
 
         {children}
