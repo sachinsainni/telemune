@@ -34,9 +34,9 @@ export function GlowingCards() {
     return (
         <div className="flex py-20 items-center justify-center antialiased space-x-2">
             {
-                data?.map((each) => {
+                data?.map((each,index) => {
                     return (
-                        <GlowingStarsBackgroundCard>
+                        <GlowingStarsBackgroundCard key={index}>
                             <GlowingStarsTitle>{each.name}</GlowingStarsTitle>
                             <div className="flex justify-between items-end">
                                 <GlowingStarsDescription>
