@@ -30,7 +30,7 @@ export default function Home() {
       <CoreValue />
       {/* <GlowingCards /> */}
       <MeteorEffect />
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }
