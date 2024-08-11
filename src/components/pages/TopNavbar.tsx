@@ -131,11 +131,19 @@ export function TopNavbar() {
                 {/* <NavbarItem className="hidden lg:flex">
                     <Link href="#">Login</Link>
                 </NavbarItem> */}
-                {/* <NavbarItem>
+                <motion.div
+                    initial={{ opacity: 0, x:   50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 1 }}
+                    className="my-auto ml-4"
+                >
+
+                <NavbarItem>
                     <Button as={Link} color="primary" href="#" variant="flat">
-                        Sign Up
+                        Contact Us
                     </Button>
-                </NavbarItem> */}
+                </NavbarItem>
+                </motion.div>
             </NavbarContent>
         </Navbar>
     );

@@ -23,7 +23,7 @@ export default function RootLayout({
 
       <body className={inter.className}>
         <NextUIProvider>
-          <main className="dark text-foreground bg-background">
+          <main className="dark text-foreground bg-background ">
             <TopNavbar />
             {children}
             <Footer />
