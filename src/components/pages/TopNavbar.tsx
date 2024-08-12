@@ -120,7 +120,7 @@ export function TopNavbar() {
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link color={`${pathname === '/about' ? "primary" : "foreground"}`} href="#">
+                    <Link color={`${pathname === '/about' ? "primary" : "foreground"}`} href="/about">
                         <NavlinkAmimation delay={0.5}>
                             About
                         </NavlinkAmimation>

@@ -5,7 +5,7 @@ import React from 'react'
 export default function page() {
     return (
         <div>
-            <div className='md:mx-12 mx-4  my-12' >
+            <div className='md:mx-12 mx-4 my-12' >
                 <Reveal>
                     <p className="text-neutral-600 dark:text-orange-600 underline text-4xl mt-6 ">
                         Growth
