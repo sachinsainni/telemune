@@ -26,7 +26,7 @@ export function TopNavbar() {
                     transition={{ delay: 1 }}
                     className="my-auto ml-4"
                 >
-                    <Tooltip color="default" content="Home" offset={15} delay={1000} showArrow size="lg" >
+                    <Tooltip color="default" content="Home"  offset={15} delay={1000} showArrow size="lg" >
                         <Link href='/'  >
                             <Image
                                 alt="logo"

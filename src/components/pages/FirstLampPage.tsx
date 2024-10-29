@@ -42,7 +42,7 @@ export function FirstLampPage() {
             >
                 <Button
                     borderRadius="1.50rem"
-                    className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 text-lg hover:text-orange-600 hover:dark:text-orange-600  "
+                    className="bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-black text-lg hover:text-orange-600 hover:dark:bg-orange-500 hover:dark:text-black    "
                 >
                     Join now
                 </Button>
