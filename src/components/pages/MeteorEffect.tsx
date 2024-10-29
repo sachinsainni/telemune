@@ -30,14 +30,14 @@ export function MeteorEffect() {
     ]
     return (
         <div className="mt-2">
-            <div className="text-neutral-600 dark:text-neutral-200 text-4xl mx-10 ">
-                <Reveal>
+            <Reveal>
+                <div className="text-neutral-600 dark:text-neutral-200 text-4xl mx-10 ">
                     Services
-                </Reveal>
-            </div>
+                </div>
+            </Reveal>
             <div className="grid grid-cols-4 gap-6 mx-10 my-16">
                 {
-                    data?.map((each , index) => {
+                    data?.map((each, index) => {
                         return (
                             <div key={index} className=" w-full relative max-w-xs ">
                                 <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-orange-600 to-orange-600 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
