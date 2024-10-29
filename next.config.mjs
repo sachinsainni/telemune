@@ -4,4 +4,5 @@ const nextConfig = {
     basePath:'/telemune'
 };
 
-export default nextConfig;
+
+g;
